@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: floralwhite;
+    
+}
+
+#title {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: lightgreen;
+}
+
+.paint {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.paint-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width:100px;
+    min-height: 500px;
+    border-style: solid;
+    border-color: red;
+}
+
+.colorpicker {
+    min-width: 90px;
+    min-height: 90px;
+    border: lightseagreen;
+    border-style: double;
+
+}
+
+.sizeslider {
+    min-width: 90px;
+    min-height: 90px;
+    border: lightseagreen;
+    border-style: double;
+    
+
+}
+
+.eraser {
+    min-width: 90px;
+    min-height: 90px;
+    border: lightseagreen;
+    border-style: double;
+    
+
+}
+
+.rbm {
+    min-width: 90px;
+    min-height: 90px;
+    border: lightseagreen;
+    border-style: double;
+   
+}
+
+.drawpad {
+    display: flex;
+    min-width: 500px;
+    min-height: 500px;
+    border-color: blue;
+    border-style: inset;
+    padding-left: 30px;
+  
+}
+
