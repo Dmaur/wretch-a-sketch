@@ -1,84 +1,82 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: floralwhite;
-    
+  display: flex;
+  flex-direction: column;
+  background-color: darkslategrey;
 }
 
 #title {
-    display:flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    font-size: 25px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: lightgreen;
 }
 
 .paint {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .paint-tools {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-width:100px;
-    min-height: 500px;
-    border-style: solid;
-    border-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 100px;
+  min-height: 500px;
+  border-style: solid;
+  border-color: red;
 }
 
-.colorpicker {
-    min-width: 90px;
-    min-height: 90px;
-    border: lightseagreen;
-    border-style: double;
-
+.colorPicker {
+  min-width: 90px;
+  min-height: 90px;
+  border: lightseagreen;
+  border-style: double;
 }
 
-.sizeslider {
-    display: flex;
-    flex-direction: column;
-    min-width: 90px;
-    min-height: 90px;
-    border: lightseagreen;
-    border-style: double;
-    text-align: center;
-    
-
+.sizeSlider {
+  display: flex;
+  flex-direction: column;
+  min-width: 90px;
+  min-height: 90px;
+  border: lightseagreen;
+  border-style: double;
+  text-align: center;
 }
 
 .eraser {
-    min-width: 90px;
-    min-height: 90px;
-    border: lightseagreen;
-    border-style: double;
-    
-
+  min-width: 90px;
+  min-height: 90px;
+  border: lightseagreen;
+  border-style: double;
 }
 
 .rbm {
-    min-width: 90px;
-    min-height: 90px;
-    border: lightseagreen;
-    border-style: double;
-   
+  min-width: 90px;
+  min-height: 90px;
+  border: lightseagreen;
+  border-style: double;
 }
 
-#drawpad {
-    display: ;
-    /* grid-auto-columns: auto|max-content|min-content|length; */
-    min-width: 500px;
-    min-height: 500px;
-    border-color: blue;
-    border-style: inset;
-    padding-left: 30px;
-  
+#container {
+  background-color: white;
+  display: grid;
+  width: 700px;
+  height: 700px;
+  border-color: white;
+  border-style: inset;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 
-
-
+.grid-item {
+  border-style: none;
+  text-align: center;
+}

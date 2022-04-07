@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 id="title">Wretched sketch</h1>
     <div class="paint">
-        <div class="paint-tools">
-            <div class="colorpicker"></div>
-            <div class="sizeslider">grid size
-                <input type="range" min="1" max="50" value="10"class="slider" id="myrange">
-            </div>    
-            <div class="eraser"></div>
-            <div class="rbm"></div>
+      <div class="paint-tools">
+        <div class="colorPicker"></div>
+        <div class="sizeSlider">
+          grid size
+          <input
+            type="range"
+            min="10"
+            max="50"
+            value="5"
+            class="slider"
+            id="myRange"
+          />
         </div>
-        <div id="drawpad"></div>
-
-
+        <div class="eraser"></div>
+        <div class="rbm"></div>
+      </div>
+      <div id="container"></div>
     </div>
-<script src="sketch.js">
-    
-</script>
-</body>
+  </body>
+  <script src="sketch.js"></script>
 </html>
