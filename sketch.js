@@ -12,10 +12,13 @@ function makeRows(rows, cols) {
   }
 }
 makeRows(100,100)
-let boxes = document.getElementsByClassName("grid-item");
+const boxes = [...document.getElementsByClassName("grid-item")];
 
-for (let box of boxes){
-  box.addEventListener("mouseover", function(event) {
-  event.target.style.background = "black"
+const makeBlack = event => event.target.style.backgroundColor = "black";
+function equip(box) {
+  box.addEventListener("mousedown", makeBlack);
+  box.addEventListener("mouseover", event => {
+    if (event.buttons == 1) makeBlack(event);
   });
 }
+boxes.forEach(equip);
